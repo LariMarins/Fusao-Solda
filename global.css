@@ -1,0 +1,18 @@
+:root{
+    --cor-primaria: #649BC6;
+    --cor-secundaria: #A9BFD0;
+    --tom-1: #243847;
+    --tom-2: #3A4247;
+    --tom-3: #4B7494;
+
+    --font-titulo: 'Playfair Display', serif;
+    --font-corpo: 'Quattrocento', serif;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100svh;
+    background-color:  var(--cor-secundaria);
+}
+    
