@@ -6,6 +6,6 @@ export * from './components/quadro'
 export * from './components/botao'
 
 // seções
-
+export * from './pages/home-page'
 
 //paginas
