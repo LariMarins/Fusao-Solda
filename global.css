@@ -15,4 +15,8 @@ body{
     height: 100svh;
     background-color:  var(--cor-secundaria);
 }
+
+.escondido{
+    top: -96px;
+}
     
