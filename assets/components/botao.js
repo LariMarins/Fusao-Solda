@@ -7,49 +7,50 @@ export class BotãO extends LitElement {
         display: block;
       }
 
+      ::slotted(button),
+      ::slotted(a),
       button {
         width: inherit;
 
-        display:inline-flex;
+        display: flex;
         padding: 5px 24px;
-        border:0;
-        justify-content: center;
+        border: 0;
+        justify-content: flex-start;
         align-items: center;
 
         border-radius: 8px;
-        background-color: color-mix(in srgb, black 60%, var(--cor-primaria));
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        background-color: var(
+          --button-background,
+          color-mix(in srgb, black 60%, var(--cor-primaria))
+        );
+        box-shadow: 0px 2px 4px 0px  black;
 
         /* Tipografia */
 
-        color: #fff;
+        color: var(
+          --color,
+          color-mix(in srgb, white 80%, var(--tom-1, ))
+        );
         text-align: center;
-        font-family: var(--fonte-corpo);
+        font-family: var(--fonte-titulo);
         font-size: 1rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        white-space:nowrap;
+        white-space: nowrap;
+        text-decoration: none;
 
-        transition: all .200ms;
+        transition: all 0.2ms;
         cursor: pointer;
-      }
-
-         button:hover, 
-         button:active{
-        background-color:  color-mix(in srgb, black 40%, var(--cor-primaria));
-        }
-
-        ::slotted(*){
-        width:24px;
-        height:24px;
-        margin: 5px 8px 5px 0px
       }
     `,
   ];
 
   render() {
-    return html` <button> <slot name="icone"></slot><slot>Pressione</slot></button> `;
+    return html`
+     <slot>
+      <button>pressione</button>
+    </slot>`;
   }
 }
 customElements.define("app-botao", BotãO);
