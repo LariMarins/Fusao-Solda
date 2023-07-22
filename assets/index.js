@@ -6,8 +6,9 @@ export * from './components/quadro'
 export * from './components/botao'
 export * from './components/navbar'
 export * from './components/rodape'
+export * from './components/quadrado'
 
 // seções
-export * from './pages/home-page'
-
+export * from './sections/hero-section'
 //paginas
+export * from './pages/home-page'
