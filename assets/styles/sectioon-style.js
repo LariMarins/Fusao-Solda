@@ -12,7 +12,7 @@ export const section = css`
     align-items: center;
     gap: 4.375rem;
 
-    padding: 2rem;
+    padding: 1rem;
     overflow:hidden;
     position:relative;
   }

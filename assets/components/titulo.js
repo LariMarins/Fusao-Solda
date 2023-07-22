@@ -13,6 +13,7 @@ export class Titulo extends LitElement {
         font-style: normal;
         font-weight: 800;
         line-height: 100%; /* 48px */
+      
       }
 
       ::slotted(*){
