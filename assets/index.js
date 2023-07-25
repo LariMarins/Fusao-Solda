@@ -11,6 +11,7 @@ export * from './components/quadrado'
 // seções
 export * from './sections/hero-section'
 export * from './sections/serviço-section'
+export * from './sections/sobre-nos-section'
 
 //paginas
 export * from './pages/home-page'

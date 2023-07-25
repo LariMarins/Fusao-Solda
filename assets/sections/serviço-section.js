@@ -9,7 +9,7 @@ export class ServicoSection extends LitElement {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding:0;
+        padding: 0;
       }
       article {
         flex-direction: column;
@@ -55,6 +55,7 @@ export class ServicoSection extends LitElement {
       </article>
       <app-paragrafo>Conheça nossos produtos. </app-paragrafo>
       <app-quadrado></app-quadrado>
+
     `;
   }
 }
