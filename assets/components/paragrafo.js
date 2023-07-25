@@ -24,4 +24,4 @@ export class Pargrafo extends LitElement {
     <p><slot>Parágrafo</slot></p> `;
   }
 }
-customElements.define("app-pargrafo", Pargrafo);
+customElements.define("app-paragrafo", Pargrafo);

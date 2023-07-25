@@ -10,7 +10,7 @@ export * from './components/quadrado'
 
 // seções
 export * from './sections/hero-section'
-export * from './sections/servico-section'
+export * from './sections/serviço-section'
 
 //paginas
 export * from './pages/home-page'
