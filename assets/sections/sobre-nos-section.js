@@ -32,12 +32,21 @@ export class SobreNosSection extends LitElement {
         letter-spacing: 0.32px;
       }
 
-      .msv {
-        flex-direction: row;
-        align-items: center;
+      .msv{
+         flex-direction: row;
         justify-content: center;
-        flex-shrink: 0;
+        align-items: center;
+        gap: 26px;    
       }
+
+      .icon{
+        text-decoration: none;
+        stroke-width: 2px;
+        color: var(--tom-1, #243847);
+        text-align:center;
+        font-size:20px;
+      }
+      .
     `,
   ];
 
@@ -58,20 +67,19 @@ export class SobreNosSection extends LitElement {
       </article>
 
       <aside class="msv">
-        <app-paragrafo>
+        <a class="icon" href="sobrenós">
           <feather-icon icon="award"></feather-icon><br />Missão
-        </app-paragrafo>
+        </a>
 
-        <app-paragrafo>
+        <a class="icon" href="sobrenós">
           <feather-icon icon="eye"></feather-icon><br />Visão
-        </app-paragrafo>
-    
+        </a>
 
-      <app-paragrafo>
+        <a  class="icon" href="sobrenós">
           <feather-icon icon="user-check"></feather-icon><br />Valores
-        </app-paragrafo>
-
-        </aside>
+        </a>
+      </aside>
+      <app-quadrado></app-quadrado>
     `;
   }
 }
