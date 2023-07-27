@@ -18,7 +18,7 @@ export class Mapa extends LitElement {
         /* estilo */
         border-radius: 8px;
         color: #fff;
-        font-family: var(--fonte-titulo);
+        font-family: var(--fonte-corpo);
         line-height: normal;
         text-align: center;
         box-shadow: 0px 24px 34px 0px rgba(0, 0, 0, 0.25);

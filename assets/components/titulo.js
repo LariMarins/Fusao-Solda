@@ -9,9 +9,9 @@ export class Titulo extends LitElement {
         mix-blend-mode: color-burn;
         text-shadow: 4px 8px 4px  rgba(0, 0, 0, 0.25);
         font-family: var(--fonte-titulo);
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 800;
+        font-size: 2.25rem;
+        font-style: italic;
+        font-weight: 600;
         line-height: 100%; /* 48px */
       
       }

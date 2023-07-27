@@ -16,7 +16,7 @@ export class SobreNosSection extends LitElement {
         justify-content: space-around;
         align-items: flex-start;
         gap: 20px;
-        padding: 32px;
+        padding: 28px;
       }
 
       aside {

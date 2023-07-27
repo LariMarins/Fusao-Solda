@@ -32,7 +32,7 @@ export class BotãO extends LitElement {
           color-mix(in srgb, white 80%, var(--tom-1, ))
         );
         text-align: center;
-        font-family: var(--fonte-titulo);
+        font-family: var(--fonte-corpo);
         font-size: 1rem;
         font-style: normal;
         font-weight: 700;
