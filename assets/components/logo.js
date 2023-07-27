@@ -9,7 +9,7 @@ export class Logo extends LitElement {
         height: 48px;
        
        background-color:var(--tom-1);
-        mix-blend-mode: color-burn;
+        
         -webkit-mask: url("../../logo.svg") no-repeat center;
         mask: url("../../public/logo.svg") no-repeat center;
 

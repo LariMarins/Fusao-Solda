@@ -44,7 +44,6 @@ export class Rodape extends LitElement {
                 width: 4rem;
                 height:4rem;
                 background-color: white;
-                opacity:.9;
             }
             
             a{

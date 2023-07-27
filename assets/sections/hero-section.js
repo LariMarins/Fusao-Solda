@@ -17,12 +17,15 @@ export class HeroSection extends LitElement {
         width: 120px;
         height: 120px;
         padding-left:2rem;
+        mix-blend-mode: color-burn;
       }
 
       app-titulo {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 3rem;
+        font-weight:bold;
       }
     `,
   ];
@@ -38,7 +41,7 @@ export class HeroSection extends LitElement {
       <app-quadro>
         <img src="../../public/slider.jpg" />
       </app-quadro>
-      <app-pargrafo>Faça seu orçamento !</app-pargrafo>
+      <app-paragrafo>Faça seu orçamento !</app-paragrafo>
       <app-quadrado></app-quadrado>
     `;
   }
