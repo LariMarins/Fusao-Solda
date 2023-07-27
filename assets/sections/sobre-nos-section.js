@@ -15,8 +15,8 @@ export class SobreNosSection extends LitElement {
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
-        gap: 32px;
-        padding: 36px 36px;
+        gap: 20px;
+        padding: 32px;
       }
 
       aside {
@@ -28,23 +28,20 @@ export class SobreNosSection extends LitElement {
       }
       app-paragrafo {
         font-size: 1.25rem;
-        text-align: left;
-        letter-spacing: 0.32px;
+        text-align: left;  
       }
 
-      .msv{
-         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 26px;    
+      app-quadro{
+        width: 250px;
+        height: 250px;
       }
 
-      .icon{
-        text-decoration: none;
-        stroke-width: 2px;
-        color: var(--tom-1, #243847);
-        text-align:center;
-        font-size:20px;
+      swiper-container{
+        width:100%;
+        height:100%;
+      }
+      img{
+        width:100%;
       }
       .
     `,
@@ -66,19 +63,24 @@ export class SobreNosSection extends LitElement {
         </aside>
       </article>
 
-      <aside class="msv">
-        <a class="icon" href="sobrenós">
-          <feather-icon icon="award"></feather-icon><br />Missão
-        </a>
+      <app-paragrafo> Nossos principais clientes</app-paragrafo>
 
-        <a class="icon" href="sobrenós">
-          <feather-icon icon="eye"></feather-icon><br />Visão
-        </a>
+      <app-quadro>
+        <swiper-container loop="true" autoplay="true">
+          <swiper-slide>
+            <img loading="lazy" src="../../public/sesc.jpg" alt="sesc logo 1" />
+          </swiper-slide>
+         
+          <swiper-slide>
+            <img loading="lazy" src="../../public/usp.jpg" alt="usp logo 3" />
+          </swiper-slide>
+          
+          <swiper-slide>
+            <img loading="lazy" src="../../public/sao judas tadeu.jpg" alt="são judas logo 2" />
+          </swiper-slide>
+          </swiper-container>
+      </app-quadro>
 
-        <a  class="icon" href="sobrenós">
-          <feather-icon icon="user-check"></feather-icon><br />Valores
-        </a>
-      </aside>
       <app-quadrado></app-quadrado>
     `;
   }
