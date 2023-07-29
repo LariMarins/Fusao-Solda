@@ -1,16 +1,16 @@
 import { LitElement, html, css } from 'lit';
 
 export class HomePage extends LitElement {
-    static styles = [
-        css`
-            :host {
-                display: block;
-            }
-        `
-    ];
+  
+     
 
     render() {
-        return html`<p>Fusão Soldas</p>`;
+        return html`
+            <hero-section></hero-section>
+            <serviço-section></serviço-section>
+            <sobre-nos-section> </sobre-nos-section>
+            <contato-section id="contato"></contato-section>
+            `;
     }
 }
-customElements.define('app-home-page', HomePage);
+customElements.define('home-page', HomePage);

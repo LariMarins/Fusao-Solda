@@ -16,5 +16,7 @@ export * from './sections/serviço-section'
 export * from './sections/sobre-nos-section'
 export * from './sections/contato-section'
 
+
 //paginas
 export * from './pages/home-page'
+export * from './pages/servico-page'

@@ -1,10 +1,10 @@
-import './assets'
+import "./assets";
 
 let navbar;
 
-document.addEventListener('DOMContentLoaded', function() {
-    navbar= document.querySelector("app-navbar")
-})
+document.addEventListener("DOMContentLoaded", function () {
+  navbar = document.querySelector("app-navbar");
+});
 
 /* Navbar dinâmica ao scroll */
 let prevScrollpos = window.pageYOffset;
