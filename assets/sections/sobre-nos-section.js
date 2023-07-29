@@ -43,6 +43,10 @@ export class SobreNosSection extends LitElement {
       img{
         width:100%;
       }
+      swiper-slide{
+        width:100%;
+        height:100%;
+      }
       .
     `,
   ];
@@ -66,19 +70,28 @@ export class SobreNosSection extends LitElement {
       <app-paragrafo> Nossos principais clientes</app-paragrafo>
 
       <app-quadro>
-        <swiper-container loop="true" autoplay="true">
+        <swiper-container
+          loop="true"
+          autoplay="true"
+          class="mySwiper"
+          speed="450"
+          >
           <swiper-slide>
-            <img loading="lazy" src="../../public/sesc.jpg" alt="sesc logo 1" />
+            <img loading="lazy" src="sesc.jpg" alt="sesc logo 1" />
           </swiper-slide>
-         
+
           <swiper-slide>
-            <img loading="lazy" src="../../public/usp.jpg" alt="usp logo 3" />
+            <img loading="lazy" src="usp.jpg" alt="usp logo 3" />
           </swiper-slide>
-          
+
           <swiper-slide>
-            <img loading="lazy" src="../../public/sao judas tadeu.jpg" alt="são judas logo 2" />
+            <img
+              loading="lazy"
+              src="sao judas tadeu.jpg"
+              alt="são judas logo 2"
+            />
           </swiper-slide>
-          </swiper-container>
+        </swiper-container>
       </app-quadro>
 
       <app-quadrado></app-quadrado>

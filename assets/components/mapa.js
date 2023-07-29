@@ -79,7 +79,7 @@ export class Mapa extends LitElement {
         <slot name="imagem"
           ><img loading="lazy"
             class="imagem"
-            src="../../public/mapa.jpg"
+            src="mapa.jpg"
             alt="Fusão SOlda"
           /> </slot>
       </figure>

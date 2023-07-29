@@ -12,8 +12,8 @@ export class Quadrado extends LitElement {
           rgba(147, 248, 255, 1) 0%,
           rgba(11, 22, 116, 1) 100%
         );
-        -webkit-mask: url("../../public/quadrados.svg") no-repeat center;
-        mask: url("../../public/quadrados.svg") no-repeat center;
+        -webkit-mask: url("quadrados.svg") no-repeat center;
+        mask: url("quadrados.svg") no-repeat center;
 
         -webkit-mask-size: 100%;
         mask-size: 100%;

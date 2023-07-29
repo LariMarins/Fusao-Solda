@@ -14,7 +14,6 @@ export * from './sections/hero-section'
 export * from './sections/serviço-section'
 export * from './sections/sobre-nos-section'
 export * from './sections/contato-section'
-export * from './sections/menu-section'
 
 //paginas
 export * from './pages/home-page'

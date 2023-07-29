@@ -39,7 +39,7 @@ export class HeroSection extends LitElement {
         </app-titulo>
       </section>
       <app-quadro>
-        <img src="../../public/slider.jpg" />
+        <img src="slider.jpg" />
       </app-quadro>
       <app-paragrafo>Faça seu orçamento !</app-paragrafo>
       <app-quadrado></app-quadrado>
