@@ -20,7 +20,6 @@ export class Cards extends LitElement {
         font-family: var(--fonte-corpo);
         line-height: normal;
         text-align: center;
-        box-shadow: 0px 24px 34px 0px rgba(0, 0, 0, 0.25);
       }
 
       address {
