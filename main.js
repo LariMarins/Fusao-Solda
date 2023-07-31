@@ -1,10 +1,37 @@
 import "./assets";
 
 let navbar;
+let dialog;
+let router;
 
 document.addEventListener("DOMContentLoaded", function () {
   navbar = document.querySelector("app-navbar");
+
+  navbar = document.querySelector("app-navbar");
+
+  
 });
+
+export const nav = {
+  abrir: function () {
+    navbar.classList.add("escondido");
+    dialog.showModal();
+  },
+  rolarPara: function (secao) {
+    Router.go("/");
+    router.ready.then(() => {
+      document
+        .querySelector("home-page")
+        .shadowRoot.querySelector(secao)
+        .scrollIntoView();
+
+      this.fechar();
+    });
+  },
+  fechar: function () {
+    dialog.close();
+  },
+};
 
 /* Navbar dinâmica ao scroll */
 let prevScrollpos = window.pageYOffset;

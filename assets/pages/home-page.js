@@ -7,8 +7,8 @@ export class HomePage extends LitElement {
     render() {
         return html`
             <hero-section></hero-section>
-            <serviço-section></serviço-section>
-            <sobre-nos-section> </sobre-nos-section>
+            <servico-section></servico-section>
+            <sobre-nos-section id="produtos"> </sobre-nos-section>
             <contato-section id="contato"></contato-section>
             `;
     }

@@ -176,4 +176,4 @@ export class ServicoSection extends LitElement {
     `;
   }
 }
-customElements.define("serviço-section", ServicoSection);
+customElements.define("servico-section", ServicoSection);

@@ -73,7 +73,7 @@ export class ServicoPage extends LitElement {
           resistência e integridade.
         </app-paragrafo>
         <app-quadro>
-          <img loading="lazy" src="card 2.jpg" alt="card2" />
+          <img loading="lazy" src="card-3.jpg" alt="card2" />
         </app-quadro>
       </article>
     `;
