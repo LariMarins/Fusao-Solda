@@ -1,9 +1,10 @@
 import { LitElement, html, css } from "lit";
 
-export class ServicoPage extends LitElement {
+export class ServicoSection extends LitElement {
   static styles = [
     css`
       :host {
+      
         display: flex;
         padding-left: 0px;
         flex-direction: column;
@@ -37,6 +38,14 @@ export class ServicoPage extends LitElement {
       span {
         color: color-mix(in srgb, black 20%, var(--tom-1));
         font-size: 16px;
+      }
+
+      @media (min-width:786px) {
+        :host {
+          display: flex;
+          justify-content:space-around;
+          height:100%
+        }
       }
     `,
   ];
@@ -79,4 +88,4 @@ export class ServicoPage extends LitElement {
     `;
   }
 }
-customElements.define("servico-page", ServicoPage);
+customElements.define("servico-section", ServicoSection);

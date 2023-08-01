@@ -1,16 +1,24 @@
 import "./assets";
 
-let navbar;
+import { Router } from "@vaadin/router";
+import { initRouter } from "./assets/router";
+import { animarScrollNavbar } from "./modules/animarScrollNavbar";
+
+export let navbar;
 let dialog;
 let router;
 
 document.addEventListener("DOMContentLoaded", function () {
+  router = initRouter();
+
+ 
   navbar = document.querySelector("app-navbar");
 
-  navbar = document.querySelector("app-navbar");
-
-  
+  dialog = document
+    .querySelector("menu-section")
+    .shadowRoot.querySelector("dialog");
 });
+
 
 export const nav = {
   abrir: function () {
@@ -20,12 +28,13 @@ export const nav = {
   rolarPara: function (secao) {
     Router.go("/");
     router.ready.then(() => {
-      document
-        .querySelector("home-page")
-        .shadowRoot.querySelector(secao)
-        .scrollIntoView();
 
-      this.fechar();
+      document
+      .querySelector("home-page")
+      .shadowRoot.querySelector(secao)
+      .scrollIntoView();
+
+      this.fechar()
     });
   },
   fechar: function () {
@@ -34,15 +43,5 @@ export const nav = {
 };
 
 /* Navbar dinâmica ao scroll */
-let prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  let currentScrollPos = window.pageYOffset;
-
-  if (prevScrollpos > currentScrollPos) {
-    navbar.classList.remove("escondido");
-  } else {
-    navbar.classList.add("escondido");
-  }
-
-  prevScrollpos = currentScrollPos;
-};
+//janeçla. ao rolar= animar SrcollNavbar
+window.onscroll = animarScrollNavbar;

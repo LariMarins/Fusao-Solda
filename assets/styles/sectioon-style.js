@@ -28,4 +28,17 @@ export const section = css`
         );
         color: var(--tom-3);
       }
+
+      
+      @media (min-width: 768px) {
+        :host{
+          padding:3rem;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        :host{
+          overflow: visible
+        }
+      }
 `;

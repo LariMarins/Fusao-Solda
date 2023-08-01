@@ -1,8 +1,9 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css } from "lit";
+import { nav } from "../../main";
 
 export class Rodape extends LitElement {
-    static styles = [
-        css`
+  static styles = [
+    css`
             :host {
                 display: block;
                 font-family: var(--fonte-corpo);
@@ -46,32 +47,54 @@ export class Rodape extends LitElement {
                 background-color: white;
             }
             
-            a{
-                color: white;
-                text-decoration: none;
-            }
-            
-        `
-    ];
+          a, button {
+            color: white;
+            text-decoration: none;
+            font-family: var(--fonte-titulo);
+            font-size: 0.75rem;
+      
+         cursor: pointer;
+           transition: 300ms;
+         }
+     
+            a:hover, button:hover{
+              color: var(--tom1)
+          }
 
-    render() {
-        return html`
-         <footer>
-           
-           <app-logo></app-logo>
-              
-              <nav>
-                 <a href=""> Home</a>
-                 <a href="">Contatos</a>
-                 <a href="serviço">Serviços</a>
-                 <a href="a-barbearia">Produtos</a>
-                <a href="/">Sobre nós</a>
-               </nav>
-           </footer>
-           
-           <span>
-           © Fusão Soldas-Todos os direitos reservados desde 2023.
-           </span>`;
-    }
+         a:active, button:active{
+         color: var(--cor-primaria)
+          }
+
+         button {
+         padding: 0;
+         border: 0;
+          background: transparent;
+         }
+        `,
+  ];
+
+  rolarContato() {
+    return nav.rolarPara("#contato");
+  }
+
+  rolarProduto() {
+    return nav.rolarPara("#produto");
+  }
+
+  render() {
+    return html` <footer>
+        <app-logo></app-logo>
+
+        <nav>
+          <a href="/"> Home</a>
+          <button @click=${this.rolarContato}>Contato</button>
+          <a href="servico">Serviços</a>
+          <button @click=${this.rolarProduto}>Produtos</button>
+          <a href="sobre-nos">Sobre nós</a>
+        </nav>
+      </footer>
+
+      <span> © Fusão Soldas-Todos os direitos reservados desde 2023. </span>`;
+  }
 }
-customElements.define('app-rodape', Rodape);
+customElements.define("app-rodape", Rodape);

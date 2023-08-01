@@ -10,9 +10,15 @@ export function initRouter() {
             action: () => import("./pages/home-page") 
         },
         {
-            path: "/serviços",
-            component: "serviços-pages",
+            path: "/servico",
+            component: "servico-page",
             action: () => import("./pages/servico-page") 
+        },
+
+        {
+            path: "/sobre-nos",
+            component: "sobre-nos-pages",
+            action: () => import("./pages/sobre-nos-page") 
         },
     ])
 

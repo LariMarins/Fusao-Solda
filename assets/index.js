@@ -16,8 +16,7 @@ export * from './sections/produto-section'
 export * from './sections/sobre-nos-section'
 export * from './sections/contato-section'
 export * from './sections/menu-section'
-
-
-//paginas
-export * from './pages/home-page'
 export * from './sections/servico-section'
+export * from './sections/acos-section'
+
+

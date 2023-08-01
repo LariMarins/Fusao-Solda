@@ -1,11 +1,9 @@
-import { LitElement, html, css } from "lit";
-import { section } from "../styles/sectioon-style";
+import { LitElement, html, css } from 'lit';
 
-export class ServicoSection extends LitElement {
-  static styles = [
-    section,
-    css`
-      :host {
+export class ProdutoSection extends LitElement {
+    static styles = [
+        css`
+            :host {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -48,14 +46,13 @@ export class ServicoSection extends LitElement {
         justify-content: center;
         align-items: center;
         transition: transform 500ms;  
-    
       }
-    `,
-  ];
+        `
+    ];
 
-  render() {
-    return html`
-      <article>
+    render() {
+        return html`
+         <article>
         <app-titulo>Serviço</app-titulo>
 
         <aside>
@@ -69,6 +66,7 @@ export class ServicoSection extends LitElement {
       </article>
       <app-paragrafo>Conheça nossos produtos. </app-paragrafo>
 
+        
       <swiper-container
         effect="coverflow"
         grab-cursor="true"
@@ -172,8 +170,7 @@ export class ServicoSection extends LitElement {
           </app-cards>
         </swiper-slide>
       </swiper-container>
-
-    `;
-  }
+        `;
+    }
 }
-customElements.define("servico-section", ServicoSection);
+customElements.define('produto-section', ProdutoSection);
