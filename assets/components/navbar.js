@@ -29,15 +29,7 @@ export class Navbar extends LitElement {
         cursor: pointer;
       }
 
-      @media (min-width: 768px) {
-        app-logo {
-          width: 96px;
-          height: 96px;
-        }
-      }
-
-      @media (min-width: 1024px) {
-      }
+     
     `,
   ];
 

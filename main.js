@@ -11,14 +11,12 @@ let router;
 document.addEventListener("DOMContentLoaded", function () {
   router = initRouter();
 
- 
   navbar = document.querySelector("app-navbar");
 
   dialog = document
     .querySelector("menu-section")
     .shadowRoot.querySelector("dialog");
 });
-
 
 export const nav = {
   abrir: function () {
@@ -28,13 +26,12 @@ export const nav = {
   rolarPara: function (secao) {
     Router.go("/");
     router.ready.then(() => {
-
       document
-      .querySelector("home-page")
-      .shadowRoot.querySelector(secao)
-      .scrollIntoView();
+        .querySelector("home-page")
+        .shadowRoot.querySelector(secao)
+        .scrollIntoView();
 
-      this.fechar()
+      this.fechar();
     });
   },
   fechar: function () {

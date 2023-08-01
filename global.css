@@ -16,6 +16,11 @@ body{
     background-color:  var(--cor-secundaria);
 }
 
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .escondido{
     top: -96px;
 }

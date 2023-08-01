@@ -10,10 +10,11 @@ export class HeroSection extends LitElement {
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
+        overflow:hidden;
       }
       img {
         width:100svw;
-        height:100svh;
+      
       }
 
       app-logo {

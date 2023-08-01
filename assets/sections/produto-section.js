@@ -1,7 +1,9 @@
 import { LitElement, html, css } from 'lit';
+import { section } from '../styles/sectioon-style';
 
 export class ProdutoSection extends LitElement {
     static styles = [
+      section,
         css`
             :host {
         display: flex;
@@ -61,7 +63,7 @@ export class ProdutoSection extends LitElement {
             alumínio. Também conhecimentos nas soldas especiais Mig e Tig. E
             polimentos em aço inox.
           </app-paragrafo>
-          <app-botao> <a href="serviços"> Saiba mais</a></app-botao>
+          <app-botao> <a href="servico"> Saiba mais</a></app-botao>
         </aside>
       </article>
       <app-paragrafo>Conheça nossos produtos. </app-paragrafo>
