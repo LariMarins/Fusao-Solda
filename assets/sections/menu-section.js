@@ -119,7 +119,7 @@ export class MenuSection extends LitElement {
             Produtos<feather-icon icon="shopping-bag"></feather-icon>
           </button>
          
-          <a @click=${nav.fechar}  href="sobre-nos-page"
+          <a @click=${nav.fechar}  href="sobre-nos"
             >Sobre nós
             <img src="icone-logo.svg" alt="iconelogo" />
           </a>

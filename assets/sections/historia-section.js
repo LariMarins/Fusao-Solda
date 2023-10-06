@@ -13,7 +13,8 @@ export class HistoriaSection extends LitElement {
 
     render() {
         return html`
-         <app-titulo></app-titulo>
+         <app-titulo>Sobre nós</app-titulo>
+         <app-paragrafo></app-paragrafo>
         `;
     }
 }
