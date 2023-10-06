@@ -1,16 +1,11 @@
 import { LitElement, html, css } from 'lit';
 
 export class SobreNosPage extends LitElement {
-    static styles = [
-        css`
-            :host {
-                display: block;
-            }
-        `
-    ];
-
     render() {
-        return html``;
+        return html`
+        <historia-section></historia-section>
+        `;
+    
     }
 }
 customElements.define('sobre-nos-page', SobreNosPage);

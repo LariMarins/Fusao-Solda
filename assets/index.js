@@ -18,5 +18,6 @@ export * from './sections/contato-section'
 export * from './sections/menu-section'
 export * from './sections/servico-section'
 export * from './sections/acos-section'
+export * from './sections/historia-section'
 
 
