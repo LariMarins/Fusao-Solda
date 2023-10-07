@@ -14,6 +14,7 @@ export class HeroSection extends LitElement {
       }
       img {
         width:100svw;
+        
       
       }
 
@@ -34,13 +35,18 @@ export class HeroSection extends LitElement {
 
       @media (min-width: 768px) {
         app-logo {
-          width: 190px;
-          height: 190px;
+          width: 180px;
+          height: 180px;
+        }
+       
+        img{
+          height:100svh;
         }
 
         app-quadro {
-          width: 580px;
-          height: 400px;
+          width: 100%;
+          height:400px;
+          
         }
 
         app-paragrafo{
@@ -48,7 +54,10 @@ export class HeroSection extends LitElement {
         }
 
         app-titulo{
-          font-size:5.5rem;
+          font-size:5rem;
+        }
+        app-quadrado{
+          display: none;
         }
       }
       @media (min-width: 1024px) {
@@ -57,13 +66,13 @@ export class HeroSection extends LitElement {
         }
 
         app-logo {
-          width: 220px;
-          height: 220px;
+          width: 168px;
+          height: 180px;
         }
 
         app-quadro{
-          width:750px;
-          height:700px;
+          width: 640px;
+          height: 600px;
         }
         
         app-titulo{
