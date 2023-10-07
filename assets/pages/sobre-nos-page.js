@@ -4,6 +4,7 @@ export class SobreNosPage extends LitElement {
     render() {
         return html`
         <historia-section></historia-section>
+        <msv-section></msv-section>
         `;
     
     }

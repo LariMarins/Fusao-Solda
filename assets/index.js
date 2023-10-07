@@ -19,5 +19,6 @@ export * from './sections/menu-section'
 export * from './sections/servico-section'
 export * from './sections/acos-section'
 export * from './sections/historia-section'
+export * from './sections/msv-section'
 
 
