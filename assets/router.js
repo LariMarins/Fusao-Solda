@@ -17,7 +17,7 @@ export function initRouter() {
 
         {
             path: "/sobre-nos",
-            component: "sobre-nos-pages",
+            component: "sobre-nos-page",
             action: () => import("./pages/sobre-nos-page") 
         },
     ])

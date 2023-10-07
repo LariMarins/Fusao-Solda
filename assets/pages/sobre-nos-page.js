@@ -5,7 +5,6 @@ export class SobreNosPage extends LitElement {
         return html`
         <historia-section></historia-section>
         <msv-section></msv-section>
-        <acos-section></acos-section>
         `;
     
     }
