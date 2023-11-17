@@ -1,12 +1,13 @@
 import { LitElement, html, css } from "lit";
+import { animate } from "../styles/animate-style";
 import { section } from "../styles/sectioon-style";
 
 export class HeroSection extends LitElement {
   static styles = [
     section,
+    animate,
     css`
       :host {
-        --animate-delay: 0.3s;
       }
 
       section {
@@ -66,14 +67,18 @@ export class HeroSection extends LitElement {
           display: none;
         }
 
+        section{
+          height:80%;
+        }
+
         app-logo {
-          width: 168px;
-          height: 180px;
+          width: 148px;
+          height: 150px;
         }
 
         app-quadro {
-          width: 640px;
-          height: 600px;
+          width: 740px;
+          height: 800px;
         }
 
         app-titulo {
@@ -91,10 +96,7 @@ export class HeroSection extends LitElement {
     return html`
       <section>
         <app-logo></app-logo>
-        <app-titulo
-          class="animate__animated animate__fast__animated"
-          data-toggle-class="animate__slideInUp"
-        >
+        <app-titulo>
           <h1>FUSÃO <br />SOLDAS</h1>
         </app-titulo>
       </section>
