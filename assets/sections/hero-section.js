@@ -5,23 +5,25 @@ export class HeroSection extends LitElement {
   static styles = [
     section,
     css`
+      :host {
+        --animate-delay: 0.3s;
+      }
+
       section {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
-        overflow:hidden;
+        overflow: hidden;
       }
       img {
-        width:100svw;
-        
-      
+        width: 100svw;
       }
 
       app-logo {
         width: 80px;
-        height: 120px; 
-      
+        height: 120px;
+
         mix-blend-mode: color-burn;
       }
 
@@ -38,25 +40,24 @@ export class HeroSection extends LitElement {
           width: 180px;
           height: 180px;
         }
-       
-        img{
-          height:100svh;
+
+        img {
+          height: 100svh;
         }
 
         app-quadro {
           width: 100%;
-          height:400px;
-          
+          height: 400px;
         }
 
-        app-paragrafo{
-          font-size:3rem;
+        app-paragrafo {
+          font-size: 3rem;
         }
 
-        app-titulo{
-          font-size:5rem;
+        app-titulo {
+          font-size: 5rem;
         }
-        app-quadrado{
+        app-quadrado {
           display: none;
         }
       }
@@ -70,16 +71,16 @@ export class HeroSection extends LitElement {
           height: 180px;
         }
 
-        app-quadro{
+        app-quadro {
           width: 640px;
           height: 600px;
         }
-        
-        app-titulo{
+
+        app-titulo {
           font-size: 4rem;
         }
-       
-        app-quadrado{
+
+        app-quadrado {
           display: none;
         }
       }
@@ -90,8 +91,11 @@ export class HeroSection extends LitElement {
     return html`
       <section>
         <app-logo></app-logo>
-        <app-titulo>
-          <h1>FUSÃO <br>SOLDAS</h1>
+        <app-titulo
+          class="animate__animated animate__fast__animated"
+          data-toggle-class="animate__slideInUp"
+        >
+          <h1>FUSÃO <br />SOLDAS</h1>
         </app-titulo>
       </section>
       <app-quadro>
