@@ -103,7 +103,7 @@ export class MenuSection extends LitElement {
 
   render() {
     return html`
-      <dialog open>
+      <dialog>
         <app-logo></app-logo>
 
         <nav>
