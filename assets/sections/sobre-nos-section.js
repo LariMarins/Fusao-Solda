@@ -47,6 +47,40 @@ export class SobreNosSection extends LitElement {
         width:100%;
         height:100%;
       }
+
+      @media (min-width: 768px) {
+        article {
+          width: 80%;
+        }
+
+        app-paragrafo {
+          font-size: 1.5rem;
+        }
+
+        app-titulo {
+          font-size: 2.5rem;
+        }
+
+        app-quadro{
+          width:50%;
+        }
+
+        img{
+          height:100%;
+        }
+      }
+
+      @media (min-width: 1024px){
+       
+        app-quadro{
+          width:60%;
+          height:70%;
+        }
+
+        app-quadrado{
+          display:none;
+        }
+      }
       .
     `,
   ];
