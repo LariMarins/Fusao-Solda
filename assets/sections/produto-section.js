@@ -1,11 +1,11 @@
-import { LitElement, html, css } from 'lit';
-import { section } from '../styles/sectioon-style';
+import { LitElement, html, css } from "lit";
+import { section } from "../styles/sectioon-style";
 
 export class ProdutoSection extends LitElement {
-    static styles = [
-      section,
-        css`
-            :host {
+  static styles = [
+    section,
+    css`
+      :host {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -47,14 +47,50 @@ export class ProdutoSection extends LitElement {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: transform 500ms;  
+        transition: transform 500ms;
+        transform: translateX(-50%);
       }
-        `
-    ];
 
-    render() {
-        return html`
-         <article>
+      @media (min-width: 768px) {
+        article {
+          width: 80%;
+        }
+
+        app-paragrafo {
+          font-size: 1.5rem;
+        }
+
+        app-titulo {
+          font-size: 2.5rem;
+        }
+
+        app-cards {
+          width: 60%;
+        }
+        swiper-slide {
+          height: 100%;
+        }
+      }
+      
+      @media (min-width: 1024px) {
+        article {
+          width: 80%;
+        }
+
+        app-paragrafo {
+          font-size: 1.5rem;
+        }
+
+        app-titulo {
+          font-size: 2.5rem;
+        }
+      }
+    `,
+  ];
+
+  render() {
+    return html`
+      <article>
         <app-titulo>Serviço</app-titulo>
 
         <aside>
@@ -68,7 +104,6 @@ export class ProdutoSection extends LitElement {
       </article>
       <app-paragrafo>Conheça nossos produtos. </app-paragrafo>
 
-        
       <swiper-container
         effect="coverflow"
         grab-cursor="true"
@@ -172,7 +207,7 @@ export class ProdutoSection extends LitElement {
           </app-cards>
         </swiper-slide>
       </swiper-container>
-        `;
-    }
+    `;
+  }
 }
-customElements.define('produto-section', ProdutoSection);
+customElements.define("produto-section", ProdutoSection);
