@@ -9,8 +9,8 @@ export class ContatoSection extends LitElement {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content:center;
-        gap: 30px;
+        justify-content:space-between;
+        gap: 10px;
       }
 
       img {
@@ -50,6 +50,18 @@ export class ContatoSection extends LitElement {
         align-items: flex-start;
         align-self: stretch;
       }
+
+      @media (min-width: 768px) {
+
+        app-titulo{
+          font-size: 3.5rem;
+        }
+
+        app-mapa{
+          width:100%;
+          height:50%;
+        }
+      }
     `,
   ];
   mensagemWhatsapp() {
@@ -68,7 +80,7 @@ export class ContatoSection extends LitElement {
       <aside>
         <app-paragrafo>
           <feather-icon icon="clock"> </feather-icon>
-          Seg á Sex: 07:00 ás 17:00. Sábado: 08:00 ás 12:00.
+          Segunda a sexta das  07:00 ás 17:00. Sábado: 08:00 ás 12:00.
         </app-paragrafo>
       </aside>
 
