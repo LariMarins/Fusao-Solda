@@ -1,11 +1,9 @@
 import { LitElement, html, css } from "lit";
-import { animate } from "../styles/animate-style";
 import { section } from "../styles/sectioon-style";
 
 export class HeroSection extends LitElement {
   static styles = [
     section,
-    animate,
     css`
       :host {
       }

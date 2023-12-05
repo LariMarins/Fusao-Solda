@@ -3,7 +3,7 @@ import "./assets";
 import { Router } from "@vaadin/router";
 import { initRouter } from "./assets/router";
 import { animarScrollNavbar } from "./modules/animarScrollNavbar";
-import { observarAnimacoes } from "./modules/observarAnimacoes";
+
 
 export let navbar;
 let dialog;
@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
   router = initRouter();
 
   router.ready.then(() => {
-    observarAnimacoes()
   });
 
 

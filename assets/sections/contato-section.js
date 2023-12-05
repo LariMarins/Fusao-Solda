@@ -9,7 +9,7 @@ export class ContatoSection extends LitElement {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content:space-between;
+        justify-content: space-between;
         gap: 10px;
       }
 
@@ -20,7 +20,6 @@ export class ContatoSection extends LitElement {
       app-botao,
       div {
         width: 100%;
-    
       }
 
       div {
@@ -44,22 +43,31 @@ export class ContatoSection extends LitElement {
       }
 
       aside {
-      
         flex-direction: row;
-        justify-content:center;
+        justify-content: center;
         align-items: flex-start;
         align-self: stretch;
       }
 
       @media (min-width: 768px) {
-
-        app-titulo{
+        app-titulo {
           font-size: 3.5rem;
         }
 
-        app-mapa{
-          width:100%;
-          height:50%;
+        app-mapa {
+          width: 100%;
+          height: 50%;
+        }
+
+        @media (min-width: 1024px) {
+          app-titulo {
+            font-size: 3.5rem;
+          }
+
+          app-mapa {
+            width: 90%;
+            height: 50%;
+          }
         }
       }
     `,
@@ -80,7 +88,7 @@ export class ContatoSection extends LitElement {
       <aside>
         <app-paragrafo>
           <feather-icon icon="clock"> </feather-icon>
-          Segunda a sexta das  07:00 ás 17:00. Sábado: 08:00 ás 12:00.
+          Segunda a sexta das 07:00 ás 17:00. Sábado: 08:00 ás 12:00.
         </app-paragrafo>
       </aside>
 
@@ -111,7 +119,8 @@ export class ContatoSection extends LitElement {
                 fill-opacity="0.4"
               />
             </svg>
-            Fale Conosco</a>
+            Fale Conosco</a
+          >
         </app-botao>
       </div>
     `;
