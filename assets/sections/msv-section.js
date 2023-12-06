@@ -39,6 +39,21 @@ export class MsvSection extends LitElement {
       .msv {
         font-size: 16px;
       }
+
+      @media (min-width: 768px) {
+        app-paragrafo {
+          font-size: 1.5rem;
+          width: 90%;
+        }
+
+        app-titulo {
+          font-size: 2.5rem;
+        }
+
+        .msv{
+          font-size:1.8rem;
+        }
+      }
     `,
   ];
 

@@ -7,8 +7,7 @@ export class HistoriaSection extends LitElement {
     css`
       :host {
         display: flex;
-        padding: 3px 0px 4px 0px;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
       }
 
@@ -22,6 +21,17 @@ export class HistoriaSection extends LitElement {
         text-align: justify;
 
         font-size: 18px;
+      }
+
+      @media (min-width: 768px) {
+        app-paragrafo {
+          font-size: 1.5rem;
+          width: 90%;
+        }
+
+        app-titulo {
+          font-size: 2.5rem;
+        }
       }
     `,
   ];

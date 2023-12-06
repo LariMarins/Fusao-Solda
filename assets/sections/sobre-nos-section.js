@@ -97,7 +97,7 @@ export class SobreNosSection extends LitElement {
             realidade, tornando-se uma empresa com diferencial em suas
             entregas. 
           </app-paragrafo>
-          <app-botao> <a href="sobre-nós"> Saiba mais</a></app-botao>
+          <app-botao> <a href="sobre-nos"> Saiba mais</a></app-botao>
         </aside>
       </article>
 
