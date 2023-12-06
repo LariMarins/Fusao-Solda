@@ -86,11 +86,11 @@ export class Mapa extends LitElement {
 
       <address>
         <slot name="titulo" >
-            <h2 class="titulo">Rua Francisca Queiroz, 176</h2>
+            <h2 class="titulo">Rua Francisca da Silveira Queiroz, 176</h2>
         </slot>
 
         <slot name="subtitulo" >
-            <h3 class="subtitulo">Paruqe Cruzeiro do Sul, São Paulo</h3>
+            <h3 class="subtitulo">Parque Cruzeiro do Sul, São Paulo</h3>
         </slot>
       </address>`;
   }

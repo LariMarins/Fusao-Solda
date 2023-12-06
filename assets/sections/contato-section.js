@@ -79,7 +79,7 @@ export class ContatoSection extends LitElement {
   }
 
   render() {
-    const numeroWhatsapp = "55119977944";
+    const numeroWhatsapp = "5511997794463";
     return html`
       <app-titulo>Entre em contato</app-titulo>
 
