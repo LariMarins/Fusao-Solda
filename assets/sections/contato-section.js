@@ -88,7 +88,7 @@ export class ContatoSection extends LitElement {
       <aside>
         <app-paragrafo>
           <feather-icon icon="clock"> </feather-icon>
-          Segunda a sexta das 07:00 ás 17:00. Sábado: 08:00 ás 12:00.
+          Segunda a sexta das 07:00 às 17:00. Sábado: 08:00 Às 12:00.
         </app-paragrafo>
       </aside>
 

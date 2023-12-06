@@ -31,10 +31,7 @@ export class MsvSection extends LitElement {
         text-align: left;
       }
 
-      img{
-        width:100%;
-      }
-
+      
       aside {
         width: 76px;
         flex-direction: center;
