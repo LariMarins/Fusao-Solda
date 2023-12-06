@@ -6,7 +6,6 @@ export class ServicoSection extends LitElement {
     section,
     css`
       :host {
-      
         display: flex;
         padding-left: 0px;
         flex-direction: column;
@@ -42,11 +41,50 @@ export class ServicoSection extends LitElement {
         font-size: 16px;
       }
 
-      @media (min-width:786px) {
+      @media (min-width: 768px) {
+        app-titulo {
+          font-size: 4rem;
+        }
+
+        app-paragrafo {
+          font-size: 1.3em;
+        }
+
         :host {
-          display: flex;
-          justify-content:space-around;
-          height:100%
+          justify-content: space-around;
+          gap: 10px;
+        }
+
+        article {
+          width: 90%;
+        }
+
+        .titulo2 {
+          font-size: 1.5rem;
+        }
+
+        app-quadro {
+          width: 120px;
+          height: 140px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        app-titulo {
+          font-size: 4rem;
+        }
+
+        app-paragrafo {
+          font-size: 1.5em;
+        }
+
+        .titulo2 {
+          font-size: 1.8rem;
+        }
+
+        app-quadro {
+          width: 130px;
+          height: 150px;
         }
       }
     `,
@@ -58,8 +96,8 @@ export class ServicoSection extends LitElement {
 
       <article>
         <app-paragrafo>
-          <span>Serviços de corte:</span> Remoção ou divisão de materiais para
-          criar formas desejadas ou ajustar tamanhos.
+          <span class="titulo2">Serviços de corte:</span> Remoção ou divisão de
+          materiais para criar formas desejadas ou ajustar tamanhos.
         </app-paragrafo>
         <app-quadro>
           <img loading="lazy" src="card 1.jpg" alt="card1" />
@@ -68,9 +106,9 @@ export class ServicoSection extends LitElement {
 
       <article>
         <app-paragrafo>
-          <span>Serviço de dobra: </span>Transformar materiais planos em formas
-          tridimensionais. É amplamente utilizado na indústria para criar peças
-          com formatos específicos e precisos.
+          <span class="titulo2">Serviço de dobra: </span>Transformar materiais
+          planos em formas tridimensionais. É amplamente utilizado na indústria
+          para criar peças com formatos específicos e precisos.
         </app-paragrafo>
         <app-quadro>
           <img loading="lazy" src="card 2.jpg" alt="card2" />
@@ -79,9 +117,9 @@ export class ServicoSection extends LitElement {
 
       <article>
         <app-paragrafo>
-          <span>Serviço de solda: </span>A solda é uma técnica de união de
-          materiais por fusão, amplamente usada na indústria para garantir
-          resistência e integridade.
+          <span class="titulo2">Serviço de solda: </span>A solda é uma técnica
+          de união de materiais por fusão, amplamente usada na indústria para
+          garantir resistência e integridade.
         </app-paragrafo>
         <app-quadro>
           <img loading="lazy" src="card-3.jpg" alt="card2" />
